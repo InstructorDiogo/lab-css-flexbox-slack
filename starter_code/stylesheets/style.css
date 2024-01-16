@@ -8,55 +8,167 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+* {
+    box-sizing: border-box;
+}
 body{
     margin: 0px;
 }
 .logo {
-    width: 100px;
-    height: 25px;
+    display: flex;
+    width: auto;
+    height: 40px;
     padding: 10px;
-
-}
-div.top-nav, div.nav-btn{
-display: flex;
-justify-content: flex-end;
-}
-div.top-nav{
-    display: flex;
-    justify-content: flex-start;
-}
-nav{
-    display: flex;
-    background-color : #540B51;
 }
 .hero {
-    width: 100%;
-    height: 100vh;
-    background-color: #540B51;
-}
-.top-nav ul {
-    display: flex;
-    justify-content: flex-start;
-    gap: 20px;
-    
-}
-.top-nav li {
-    display: block;
-    
-}
-.top-nav a {
-    text-decoration: none;
-        color: white;
-}
-div {
-    width: 100%;
-}
-div .nav-btn {
    
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
-}
-.top-nav h1 {
     background-color: #540B51;
+}
+ ul{ 
+    display: flex;
+    flex-wrap:inherit;
+    gap: 4%;
+    padding: 0px;
+    font-size: 12px;
+
+}
+
+li , li a {
+   color: white;
+    text-decoration: none;
+    list-style: none;
+    
+   
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.top-nav , .nav-btn {
+    display: flex;
+    width: 430px;
+    box-sizing: border-box;
+    
+}
+.nav-btn{
+    margin-right: 5px;
+    justify-content: flex-end;
+}
+button {
+    margin: 0%;
+    padding: 0px;
+    border: 0px;
+    background-color: #540B51;
+}
+h1 {
+    color: white;
+    font-size: 45px;
+    text-align: center;
+}
+h2 {
+    color: black;
+    text-align: center;
+}
+.white {
+    text-align: center;
+    color: white;
+}
+
+.yellow {
+    color: #ECB12F;
+}
+.ggl-logo {
+    display: flex;
+
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    margin-right: 35px;
+    
+}
+.registration-buttons {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 5px;
+}
+
+.registration-buttons .sign-up {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    background-color: white;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight:bold ;
+}
+.google-sign-up {
+    display: flex; 
+    justify-content: flex-start;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.registration-buttons .google-sign-up {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #4285F4;
+    border-radius: 4px;
+    text-transform: uppercase;
+    
+}
+.screenshot{
+    width: 430px;
+    height: 398px;
+    overflow: hidden;
+    background-image:url("../images/hero-product-ui.png");
+    background-size: cover;
+
+}
+ .companies {
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    color: black;
+}
+.companies-logos{
+    display: flex;
+    flex-wrap: wrap;
+justify-content: center;
+
+}
+.connectedness ,
+.flexibility ,
+ .speed {
+    width: auto;
+    height: 398px;
+    overflow: hidden;
+    background-size: cover;
+    margin: 20px;
+}
+.connectedness{
+    background-image: url("../images/connectedness-mobile.png");
+}
+.info {
+    padding: 20px;
+    text-align: left;
+
+}
+a{
+    text-decoration: none;
+    margin-bottom: 20px;
+   
+}
+.flexibility{
+background-image: url("../images/flexibility-mobile.png");
+}
+.speed{
+background-image: url("../images/speed-mobile.png");
 }
