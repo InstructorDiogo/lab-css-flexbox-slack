@@ -10,9 +10,11 @@ footer links grey: #454245
 */
 * {
     box-sizing: border-box;
+    font-family: Helvetica;
 }
 body{
     margin: 0px;
+    background-color: #F3EAE2;
 }
 .logo {
     display: flex;
@@ -24,22 +26,26 @@ body{
    
     background-color: #540B51;
 }
- ul{ 
+ .nav-ul{ 
     display: flex;
     flex-wrap:inherit;
     gap: 4%;
     padding: 0px;
     font-size: 12px;
+    visibility: hidden;
 
 }
 
-li , li a {
-   color: white;
+li{
     text-decoration: none;
     list-style: none;
+} li a {
+   color: white;
+   
     
    
 }
+
 
 .navbar{
     display: flex;
@@ -64,6 +70,7 @@ button {
     background-color: #540B51;
 }
 h1 {
+    padding: 10px;
     color: white;
     font-size: 45px;
     text-align: center;
@@ -86,7 +93,7 @@ h2 {
     width: 40px;
     height: 40px;
     background-color: white;
-    margin-right: 35px;
+    margin-right: 22%;
     
 }
 .registration-buttons {
@@ -157,8 +164,9 @@ justify-content: center;
     background-image: url("../images/connectedness-mobile.png");
 }
 .info {
+    line-height: 1.25;
     padding: 20px;
-    text-align: left;
+    text-align: center;
 
 }
 a{
@@ -172,3 +180,172 @@ background-image: url("../images/flexibility-mobile.png");
 .speed{
 background-image: url("../images/speed-mobile.png");
 }
+ a {
+    margin-left: 20px;
+}
+ h3{
+    color: black;
+    font-size: 24px;
+    text-align: center;
+
+}
+.teams {
+    color: black;
+    margin: 20px;
+    height: fit-content;
+
+}
+.meet-talk-btns , .talk-btn , .meet-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    gap: 10px;
+}
+ .talk-btn , .meet-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    padding: 20px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+.talk-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    color: #540B51;
+    border: 2px solid #540B51;
+    
+}
+.meet-btn {
+    border: 2px solid white;
+}
+.percentage{
+    display: block;
+    font-size: 50px;
+    font-weight: bolder;
+    color: #540B51;
+    text-align: center;
+}
+ .percentage-p {
+    line-height: 1.25;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+ .welc {
+    background-color: #540B51;
+    padding: 20px;
+    margin: 40px;
+ }
+ .footer-img{
+    width: 50px;
+    height: 50px;
+    display: block;
+
+ }
+ .footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-right: 20px;
+ }
+  .bold {
+      color: black;
+      font-size: larger;
+      font-weight: bold;
+      padding: 5px
+
+  }
+ 
+ .footer li:not(:has(.bold)) {
+     color: rgb(113, 111, 111);
+     padding: 5px;
+     
+ }
+ .contact {
+    display: flex;
+    justify-content: space-between;
+ }
+
+ @media (min-width: 500px) {
+    .desktop-v {
+        display: flex;
+    justify-content: space-evenly; 
+       }
+       .screenshot{
+        width: 50%;
+        height: auto;
+        padding: 80px;
+    }  
+    .section2{
+        width: 40%;
+    }
+    .nav-ul {
+            visibility: visible;
+    }
+    .companies-logos{
+        justify-content: space-evenly;
+       
+    }
+    .connectedness,
+    .flexibility,
+    .speed {
+    width: 40%;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    }
+    .connected {
+        display: flex;
+        justify-content: space-between;
+    }
+    .internal-divs{
+        display: flex;
+        width: 40%;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+    }
+    h2{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 40px;
+    }
+    .info{
+        text-align: left;
+        padding-left: 20%;
+        padding-right: 20%;
+        font-size: 18px;
+    }
+    .flix{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse ;
+    }
+    .meet-talk-btns{
+     flex-direction: row;   
+     }
+   .percentage-ul {
+    display: flex;
+   }
+   .settings{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   }
+   .contact{
+    justify-content: flex-start;
+    gap:30px
+
+   }
+    }  
+    
+ 
